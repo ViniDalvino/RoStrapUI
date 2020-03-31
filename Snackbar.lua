@@ -85,7 +85,7 @@ Shadow.Parent = SnackbarImage
 local LocalPlayer, PlayerGui do
 	if RunService:IsClient() then
 		repeat LocalPlayer = Players.LocalPlayer until LocalPlayer or not wait()
-		repeat PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui") until PlayerGui or not wait()
+		repeat PlayerGui = game:GetService("CoreGui")
 	end
 end
 

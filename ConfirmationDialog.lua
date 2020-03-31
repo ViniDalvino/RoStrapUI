@@ -35,7 +35,7 @@ local LocalPlayer, PlayerGui do
 			PlayerGui = game:GetService("CoreGui")
 		else
 			repeat LocalPlayer = Players.LocalPlayer until LocalPlayer or not wait()
-			repeat PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui") until PlayerGui or not wait()
+			repeat PlayerGui = game:GetService("CoreGui")
 		end
 	end
 end
